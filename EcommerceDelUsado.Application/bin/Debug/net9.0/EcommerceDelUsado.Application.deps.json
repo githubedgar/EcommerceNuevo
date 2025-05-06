@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "EcommerceDelUsado.Application/1.0.0": {
+        "dependencies": {
+          "EcommerceDelUsado.Domain": "1.0.0"
+        },
+        "runtime": {
+          "EcommerceDelUsado.Application.dll": {}
+        }
+      },
+      "EcommerceDelUsado.Domain/1.0.0": {
+        "runtime": {
+          "EcommerceDelUsado.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EcommerceDelUsado.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EcommerceDelUsado.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
