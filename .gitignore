@@ -1,0 +1,13 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.tmp
+
+# Archivos de compilación
+bin/
+obj/
+
+# Otros
+*.log
+*.DS_Store
