@@ -1,13 +1,34 @@
-# Visual Studio
-.vs/
+git add .
+git commit -m "Limpieza del proyecto: reorganización de la estructura de carpetas, actualización de .gitignore y eliminación de artefactos de compilación no rastreados."
+
+# Archivos de usuario de Visual Studio
 *.user
 *.suo
-*.tmp
+*.userosscache
+*.sln.docstates
 
-# Archivos de compilación
+# Carpetas generadas
 bin/
 obj/
+build/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
 
-# Otros
+# Archivos temporales
 *.log
-*.DS_Store
+*.tmp
+*.temp
+
+# Configuración local
+.vscode/
+.vs/
+*.dbmdl
+*.pdb
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno
+*.env
