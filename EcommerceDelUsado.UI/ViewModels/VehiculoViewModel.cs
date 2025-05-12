@@ -19,12 +19,12 @@ namespace EcommerceDelUsado.UI.ViewModels
         public VehiculoViewModel(ObtenerVehiculosUseCase useCase)
         {
             _useCase = useCase;
-            _ = CargarVehiculosAsync();
+            _ = CargarVehiculosAsync(); // Aqui inicia la carga de datos
         }
 
         private async Task CargarVehiculosAsync()
         {
-            var lista = await _useCase.EjecutarAsync();
+            var lista = await _useCase.EjecutarAsync(); //Llama al caso de uso.
             Vehiculos.Clear();
             foreach (var v in lista)
             {
