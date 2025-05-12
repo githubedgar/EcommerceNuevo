@@ -1,34 +1,59 @@
-git add .
-git commit -m "Limpieza del proyecto: reorganización de la estructura de carpetas, actualización de .gitignore y eliminación de artefactos de compilación no rastreados."
-
 # Archivos de usuario de Visual Studio
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
 
-# Carpetas generadas
+# Carpetas generadas automáticamente
 bin/
 obj/
 build/
 [Bb]uild/
 [Bb]in/
 [Oo]bj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.dbmdl
 
 # Archivos temporales
 *.log
 *.tmp
 *.temp
 
-# Configuración local
+# Configuración local y entorno de desarrollo
 .vscode/
 .vs/
-*.dbmdl
-*.pdb
+*.env
 
-# Archivos del sistema
+# Archivos del sistema (Windows/macOS)
 .DS_Store
 Thumbs.db
 
-# Archivos de entorno
-*.env
+# Archivos de NuGet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.nupkg
+*.snupkg
+.nuget/
+
+# Archivos de configuración de usuario de MAUI
+*.app/
+*.apk/
+*.aab/
+*.xcarchive
+*.ipa
+
+# Dotnet artifacts
+project.lock.json
+project.fragment.lock.json
+*.nuget.props
+*.nuget.targets
+
+# Otros archivos que no deben ir al control de versiones
+*.json
+*.jfm
+*.db
+*.dbmdl
