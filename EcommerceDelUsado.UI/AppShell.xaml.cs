@@ -1,7 +1,7 @@
-﻿using EcommerceDelUsado.UI.Views;
+﻿
 
 
-namespace EcommerceDelUsado
+namespace EcommerceDelUsado.UI
 {
     public partial class AppShell : Shell
     {
@@ -9,7 +9,7 @@ namespace EcommerceDelUsado
         {
             InitializeComponent();
 
-            Routing.RegisterRoute(nameof(VehiculoPage), typeof(VehiculoPage));
+            //Routing.RegisterRoute(nameof(VehiculoPage), typeof(VehiculoPage));
 
         }
     }
