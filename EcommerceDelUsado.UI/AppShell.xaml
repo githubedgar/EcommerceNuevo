@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="EcommerceDelUsado.UI.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:EcommerceDelUsado.UI"
-    Shell.FlyoutBehavior="Flyout"
-    Title="EcommerceDelUsado">
-
+    xmlns:views="clr-namespace:EcommerceDelUsado.UI.Views"
+    x:Class="EcommerceDelUsado.UI.AppShell">
+    
     <TabBar>
-        <ShellContent 
+    <ShellContent 
             Title="Inicio" 
             Icon="home.png" 
             ContentTemplate="{DataTemplate local:MainPage}" />
 
-        <ShellContent 
-            Title="Autos" 
-            Icon="auto.png" 
-            ContentTemplate="{DataTemplate local:VehiculoPage}" />
+    <ShellContent
+            Title="Vehículos"
+            Icon="vehiculos_icon.png"
+            ContentTemplate="{DataTemplate views:VehiculoPage}" />
     </TabBar>
-
 </Shell>
-    

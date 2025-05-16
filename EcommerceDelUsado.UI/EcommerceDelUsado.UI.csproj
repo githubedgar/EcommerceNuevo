@@ -79,6 +79,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="MainPage.xaml">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\BicisElectricasPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
