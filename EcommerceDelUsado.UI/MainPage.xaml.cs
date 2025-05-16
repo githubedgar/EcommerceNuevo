@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Maui.Controls;
+using EcommerceDelUsado.UI.Views; // IMPORTACIÓN NECESARIA
 
 namespace EcommerceDelUsado.UI
 {
@@ -11,7 +12,8 @@ namespace EcommerceDelUsado.UI
         }
         private async void OnVerVehiculosClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.VehiculoPage());
+            //await Shell.Current.GoToAsync(nameof(VehiculoPage));
+            await Navigation.PushAsync(new VehiculoPage()); // ✅ Ya reconoce VehiculoPage
         }
     }
 }
