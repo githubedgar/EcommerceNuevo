@@ -2,71 +2,84 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EcommerceDelUsado.UI.MainPage"
-             Title="Inicio"
-             BackgroundColor="White">
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
 
-    <VerticalStackLayout Padding="10">
+    <Grid RowDefinitions="Auto, Auto, *">
 
-        <Label Text="Inicio"
-               FontSize="24"
-               FontAttributes="Bold"
-               HorizontalOptions="Start"
-               TextColor="#0078D7" />
-
-        <ScrollView Orientation="Horizontal"
-                    Margin="0,10,0,10"
-                    HorizontalScrollBarVisibility="Never">
-            <HorizontalStackLayout Spacing="10">
-
-                <Button Text="Auto"
-                        BackgroundColor="#0078D7"
-                        TextColor="White"
-                        CornerRadius="15"
-                        Padding="10,5" 
-                        Clicked="OnVerVehiculosClicked"/>
-
-                <Button Text="M. Trad"
-                        BackgroundColor="#E0E0E0"
-                        TextColor="Black"
-                        CornerRadius="15"
-                        Padding="10,5" />
-
-                <Button Text="M. Eléc"
-                        BackgroundColor="#E0E0E0"
-                        TextColor="Black"
-                        CornerRadius="15"
-                        Padding="10,5" />
-
-                <Button Text="B. Trad"
-                        BackgroundColor="#E0E0E0"
-                        TextColor="Black"
-                        CornerRadius="15"
-                        Padding="10,5" />
-
-                <Button Text="B. Eléc"
-                        BackgroundColor="#E0E0E0"
-                        TextColor="Black"
-                        CornerRadius="15"
-                        Padding="10,5" />
-            </HorizontalStackLayout>
-        </ScrollView>
-
-        <Grid HeightRequest="300" VerticalOptions="CenterAndExpand">
-            <Image Source="icon_placeholder.png"
-                   WidthRequest="120"
-                   HeightRequest="120"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center" />
+        <!-- Barra azul con texto Inicio -->
+        <Grid BackgroundColor="#007AFF" Padding="20" Grid.Row="0">
+            <Label Text="Inicio"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"/>
         </Grid>
 
-        <Button Text="Ver Vehículos"
-                Clicked="OnVerVehiculosClicked"
-                BackgroundColor="#28A745"
-                TextColor="White"
-                CornerRadius="10"
-                Padding="10"
-                Margin="0,20,0,0"
-                HorizontalOptions="Center" />
+        <!-- Botones horizontales -->
+        <Grid ColumnSpacing="6" Padding="20,10" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-    </VerticalStackLayout>
+            <Button Text="Auto"
+                    BackgroundColor="#007AFF"
+                    TextColor="White"
+                    CornerRadius="15"
+                    Grid.Column="0"
+                    HeightRequest="40"
+                    FontSize="12"
+                    Clicked="OnVerVehiculosClicked"/>
+
+            <Button Text="M.Trad"
+                    BackgroundColor="#E0E0E0"
+                    TextColor="Black"
+                    CornerRadius="15"
+                    Grid.Column="1"
+                    HeightRequest="40"
+                    FontSize="11" />
+
+            <Button Text="M.Eléc"
+                    BackgroundColor="#E0E0E0"
+                    TextColor="Black"
+                    CornerRadius="15"
+                    Grid.Column="2"
+                    HeightRequest="40"
+                    FontSize="11" />
+
+            <Button Text="B.Trad"
+                    BackgroundColor="#E0E0E0"
+                    TextColor="Black"
+                    CornerRadius="15"
+                    Grid.Column="3"
+                    HeightRequest="40"
+                    FontSize="11" />
+
+            <Button Text="B.Eléc"
+                    BackgroundColor="#E0E0E0"
+                    TextColor="Black"
+                    CornerRadius="15"
+                    Grid.Column="4"
+                    HeightRequest="40"
+                    FontSize="11" />
+        </Grid>
+
+        <!-- Imagen centrada en pantalla -->
+        <Grid Grid.Row="2"
+              HorizontalOptions="Center"
+              VerticalOptions="Center">
+            <Image Source="imagenecommercedelusado.png"
+                   Aspect="AspectFit"
+                   WidthRequest="360"
+                   HeightRequest="360"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+        </Grid>
+
+    </Grid>
 </ContentPage>

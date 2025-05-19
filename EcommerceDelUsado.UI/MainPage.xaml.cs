@@ -13,7 +13,7 @@ namespace EcommerceDelUsado.UI
         private async void OnVerVehiculosClicked(object sender, EventArgs e)
         {
             //await Shell.Current.GoToAsync(nameof(VehiculoPage));
-            await Navigation.PushAsync(new VehiculoPage()); // ✅ Ya reconoce VehiculoPage
+            await Navigation.PushAsync(new VehiculoPage()); // Ya reconoce VehiculoPage
         }
     }
 }
