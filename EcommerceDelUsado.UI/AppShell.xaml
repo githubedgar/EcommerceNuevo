@@ -12,9 +12,5 @@
             Icon="home.png" 
             ContentTemplate="{DataTemplate local:MainPage}" />
 
-    <ShellContent
-            Title="Vehículos"
-            Icon="vehiculos_icon.png"
-            ContentTemplate="{DataTemplate views:VehiculoPage}" />
     </TabBar>
 </Shell>

@@ -5,7 +5,7 @@
              BackgroundColor="White"
              NavigationPage.HasNavigationBar="False">
 
-    <Grid RowDefinitions="Auto, Auto, *">
+    <Grid RowDefinitions="Auto, Auto, *, Auto">
 
         <!-- Barra azul con texto Inicio -->
         <Grid BackgroundColor="#007AFF" Padding="20" Grid.Row="0">
@@ -17,7 +17,7 @@
                    VerticalOptions="Center"/>
         </Grid>
 
-        <!-- Botones horizontales -->
+        <!-- Botones horizontales (categorías superiores) -->
         <Grid ColumnSpacing="6" Padding="20,10" Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -79,6 +79,58 @@
                    HeightRequest="360"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
+        </Grid>
+
+        <!-- Botones inferiores con ícono y texto -->
+        <Grid Grid.Row="3" Padding="10" ColumnSpacing="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center">
+                <ImageButton Source="house.png"
+                             BackgroundColor="Transparent"
+                             HeightRequest="24"
+                             WidthRequest="24" />
+                <Label Text="Inicio" FontSize="10" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center">
+                <ImageButton Source="automovil.png
+                             "
+                             BackgroundColor="Transparent"
+                             HeightRequest="24"
+                             WidthRequest="24" />
+                <Label Text="Auto" FontSize="10" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center">
+                <ImageButton Source="mototradicional.png"
+                             BackgroundColor="Transparent"
+                             HeightRequest="24"
+                             WidthRequest="24" />
+                <Label Text="M. Trad" FontSize="10" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="3" HorizontalOptions="Center">
+                <ImageButton Source="motoelectrica.png"
+                             BackgroundColor="Transparent"
+                             HeightRequest="24"
+                             WidthRequest="24" />
+                <Label Text="M. Eléc" FontSize="10" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="4" HorizontalOptions="Center">
+                <ImageButton Source="bicielectrica.png"
+                             BackgroundColor="Transparent"
+                             HeightRequest="24"
+                             WidthRequest="24" />
+                <Label Text="B. Eléc" FontSize="10" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
         </Grid>
 
     </Grid>
