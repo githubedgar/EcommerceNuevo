@@ -69,17 +69,27 @@
                     FontSize="11" />
         </Grid>
 
-        <!-- Imagen centrada en pantalla -->
+        <!-- Imagen centrada con esquinas redondeadas usando Frame -->
         <Grid Grid.Row="2"
               HorizontalOptions="Center"
               VerticalOptions="Center">
-            <Image Source="imagenecommercedelusado.png"
-                   Aspect="AspectFit"
-                   WidthRequest="360"
-                   HeightRequest="360"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"/>
+            <Frame Padding="0"
+           CornerRadius="40"
+           HasShadow="False"
+           IsClippedToBounds="True"
+           WidthRequest="360"
+           HeightRequest="360"
+           HorizontalOptions="Center"
+           VerticalOptions="Center">
+                <Image Source="imagenecommercedelusado.png"
+               Aspect="AspectFill"
+               WidthRequest="360"
+               HeightRequest="360"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+            </Frame>
         </Grid>
+
 
         <!-- Botones inferiores con ícono y texto -->
         <Grid Grid.Row="3" Padding="10" ColumnSpacing="6">
