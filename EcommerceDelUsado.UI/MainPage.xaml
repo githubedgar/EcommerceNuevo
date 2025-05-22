@@ -116,7 +116,8 @@
                     <ImageButton Source="automovil.png"
                                  BackgroundColor="Transparent"
                                  HeightRequest="24"
-                                 WidthRequest="24" />
+                                 WidthRequest="24"
+                                 Clicked="OnVerVehiculosClicked"/>
                     <Label Text="Auto" FontSize="10" TextColor="#1B1B1B" HorizontalTextAlignment="Center" />
                 </VerticalStackLayout>
 
