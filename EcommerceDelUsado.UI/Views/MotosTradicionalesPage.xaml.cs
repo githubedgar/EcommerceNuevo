@@ -1,9 +1,14 @@
-namespace EcommerceDelUsado.UI.Views;
+using Microsoft.Maui.Controls;
 
-public partial class MotosTradicionalesPage : ContentPage
+namespace EcommerceDelUsado.UI.Views
 {
-	public MotosTradicionalesPage()
-	{
-		InitializeComponent();
-	}
+    public partial class MotosTradicionalesPage : ContentPage
+    {
+        public MotosTradicionalesPage()
+        {
+            InitializeComponent();
+        }
+    }
 }
+
+

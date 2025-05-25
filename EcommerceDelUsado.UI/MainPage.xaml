@@ -42,8 +42,9 @@
                     CornerRadius="15"
                     Grid.Column="1"
                     HeightRequest="50"
-                    FontSize="11" />
-
+                    FontSize="11" 
+                    Clicked="OnVerMotoTradicionalClicked"/>
+            
             <Button Text="Moto&#10;Eléc"
                     BackgroundColor="#E0E0E0"
                     TextColor="#1B1B1B"
@@ -125,7 +126,8 @@
                     <ImageButton Source="mototradicional.png"
                                  BackgroundColor="Transparent"
                                  HeightRequest="24"
-                                 WidthRequest="24" />
+                                 WidthRequest="24"
+                                 Clicked="OnVerMotoTradicionalClicked"/>
                     <Label Text="M. Trad" FontSize="10" TextColor="#1B1B1B" HorizontalTextAlignment="Center" />
                 </VerticalStackLayout>
 
