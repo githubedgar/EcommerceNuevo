@@ -8,11 +8,14 @@
 
     <TabBar>
         <!-- Página principal -->
-        <ShellContent 
-            Title="Inicio"
-            Icon="home.png" 
+        <ShellContent  
             ContentTemplate="{DataTemplate local:MainPage}" />
-
     </TabBar>
+
+    <!-- Ruta oculta a VehiculoPage para navegación -->
+    <ShellContent 
+        Route="vehiculo"
+        ContentTemplate="{DataTemplate views:VehiculoPage}"
+        IsVisible="False" />
 
 </Shell>

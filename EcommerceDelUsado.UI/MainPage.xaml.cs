@@ -12,16 +12,13 @@ namespace EcommerceDelUsado.UI
         }
         private async void OnVerVehiculosClicked(object sender, EventArgs e)
         {
-            //await Shell.Current.GoToAsync(nameof(VehiculoPage));
-            await Navigation.PushAsync(new VehiculoPage()); // Ya reconoce VehiculoPage
+           
+            await Shell.Current.GoToAsync("VehiculoPage");
         }
         private async void OnVerMotoTradicionalClicked(object sender, EventArgs e)
         {
-            // Aquí puedes navegar a otra página, por ejemplo:
-            await Navigation.PushAsync(new MotosTradicionalesPage()); // Ya reconoce MotosTradicionalesPage
+            await Navigation.PushAsync(new MotosTradicionalesPage()); 
 
-            // O mostrar un mensaje temporal (para pruebas):
-            // await DisplayAlert("Moto Tradicional", "Has seleccionado Moto Tradicional", "OK");
         }
 
     }

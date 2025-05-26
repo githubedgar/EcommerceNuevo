@@ -10,7 +10,6 @@ public partial class VehiculoPage : ContentPage
     {
         InitializeComponent();
 
-        // Cadena de conexión (ajústala si está en otro lado o si usas secrets)
         string connectionString = "Server=localhost;Database=EcommerceDelUsadoDB;Trusted_Connection=True;TrustServerCertificate=True;";
 
         var repositorio = new VehiculoRepository(connectionString);
