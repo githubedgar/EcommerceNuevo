@@ -50,7 +50,9 @@
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
-		<MauiImage Include="Resources\Images\**\*&#xD;&#xA;				   " />
+		<!--<MauiImage Include="Resources\Images\**\*&#xD;&#xA;" />-->
+		<!--<MauiImage Include="Resources\Images\autos\*.png" />-->
+		<MauiImage Include="Resources\Images\**" />
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
 
 		<!-- Custom Fonts -->
@@ -62,6 +64,60 @@
 
 	<ItemGroup>
 	  <AndroidResource Remove="Platforms\Android\Resources\values\styles.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\autos\chevrolet1.png" />
+	  <MauiImage Remove="Resources\Images\autos\chevrolet2.png" />
+	  <MauiImage Remove="Resources\Images\autos\ford1.png" />
+	  <MauiImage Remove="Resources\Images\autos\ford2.png" />
+	  <MauiImage Remove="Resources\Images\autos\honda1.png" />
+	  <MauiImage Remove="Resources\Images\autos\honda2.png" />
+	  <MauiImage Remove="Resources\Images\autos\renault1.png" />
+	  <MauiImage Remove="Resources\Images\autos\renault2.png" />
+	  <MauiImage Remove="Resources\Images\autos\toyota1.png" />
+	  <MauiImage Remove="Resources\Images\autos\toyota2.png" />
+	  <MauiImage Remove="Resources\Images\autos\volkswagen1.png" />
+	  <MauiImage Remove="Resources\Images\autos\volkswagen2.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="Resources\Images\autos\chevrolet1.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Resources\Images\autos\chevrolet2.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Resources\Images\autos\ford1.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Resources\Images\autos\ford2.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Resources\Images\autos\honda1.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Resources\Images\autos\honda2.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Resources\Images\autos\renault1.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Resources\Images\autos\renault2.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Resources\Images\autos\toyota1.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Resources\Images\autos\toyota2.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Resources\Images\autos\volkswagen1.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Resources\Images\autos\volkswagen2.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -79,6 +135,7 @@
 	  <Folder Include="Models\" />
 	  <Folder Include="Helpers\" />
 	  <Folder Include="Controls\" />
+	  <Folder Include="Resources\Images\motoselectricas\" />
 	  <Folder Include="Services\" />
 	</ItemGroup>
 

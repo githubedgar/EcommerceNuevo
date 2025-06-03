@@ -1,6 +1,4 @@
-﻿
-
-// EcommerceDelUsado.UI/ViewModels/VehiculoViewModel.cs
+﻿// EcommerceDelUsado.UI/ViewModels/VehiculoViewModel.cs
 using EcommerceDelUsado.Application.UseCases;
 using EcommerceDelUsado.Domain.Entities;
 using System.Collections.ObjectModel;

@@ -21,10 +21,10 @@
                 <Image Source="mototradducati1.png" HeightRequest="180" Aspect="AspectFit"/>
             </Frame>
 
-            <!-- Ejemplo Ducati2 -->
+            <!-- Ejemplo Yamaha1 -->
             <Label Text="Yamaha" FontSize="20" FontAttributes="Bold" />
             <Frame CornerRadius="10" HasShadow="True" Padding="5">
-                <Image Source="mototradyamahaa.png" HeightRequest="150" Aspect="AspectFit"/>
+                <Image Source="mototradyamaha1.png" HeightRequest="150" Aspect="AspectFit"/>
             </Frame>
             <!-- Puedes continuar aquí con más imágenes como antes -->
 

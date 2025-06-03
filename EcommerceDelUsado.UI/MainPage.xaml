@@ -124,7 +124,7 @@
                 </VerticalStackLayout>
 
                 <VerticalStackLayout HorizontalOptions="Center">
-                    <ImageButton Source="mototradicional.png"
+                    <ImageButton Source="mototrad.png"
                                  BackgroundColor="Transparent"
                                  HeightRequest="24"
                                  WidthRequest="24"
@@ -133,7 +133,7 @@
                 </VerticalStackLayout>
 
                 <VerticalStackLayout HorizontalOptions="Center">
-                    <ImageButton Source="motoelectrica.png"
+                    <ImageButton Source="motoelec.png"
                                  BackgroundColor="Transparent"
                                  HeightRequest="24"
                                  WidthRequest="24" />
@@ -141,7 +141,7 @@
                 </VerticalStackLayout>
 
                 <VerticalStackLayout HorizontalOptions="Center">
-                    <ImageButton Source="bicielectrica.png"
+                    <ImageButton Source="bicielec.png"
                                  BackgroundColor="Transparent"
                                  HeightRequest="24"
                                  WidthRequest="24" />
@@ -150,7 +150,7 @@
 
                 <!-- NUEVO BOTÓN: B. Trad -->
                 <VerticalStackLayout HorizontalOptions="Center">
-                    <ImageButton Source="bicitradicional.png"
+                    <ImageButton Source="bicitrad.png"
                                  BackgroundColor="Transparent"
                                  HeightRequest="24"
                                  WidthRequest="24" />
