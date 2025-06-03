@@ -75,29 +75,50 @@
         <Grid Grid.Row="2"
               HorizontalOptions="Center"
               VerticalOptions="Center">
-            <Frame Padding="0"
-                   CornerRadius="40"
-                   HasShadow="False"
-                   IsClippedToBounds="True"
-                   WidthRequest="320"
-                   HeightRequest="360"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   BackgroundColor="White"
-                   BorderColor="#CCCCCC">
-                <Image Source="imagenecommercedelusado.png"
-                       Aspect="AspectFill"
-                       
-                       
-                       
-                       
-                       WidthRequest="320"
-                       HeightRequest="360"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center" />
-            </Frame>
-        </Grid>
 
+
+            <!--<Frame Padding="0"
+       CornerRadius="0"
+       HasShadow="False"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"
+       BackgroundColor="Transparent"
+       BorderColor="Transparent">
+
+                <Image Source="imagenecommercedelusado.png"
+           Aspect="AspectFit"
+           WidthRequest="200"
+           HeightRequest="200"
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+            </Frame>-->
+
+
+            <Frame Padding="0"
+       CornerRadius="30"
+       HasShadow="False"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"
+       BackgroundColor="Transparent"
+       BorderColor="Transparent"
+       WidthRequest="200"
+       HeightRequest="200">
+
+                <Image Source="imagenecommercedelusado.png"
+           Aspect="AspectFill"
+           WidthRequest="200"
+           HeightRequest="200"
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+            </Frame>
+
+
+
+
+
+        </Grid>
         <!-- Botones inferiores con scroll horizontal -->
         <ScrollView Grid.Row="3"
                     Orientation="Horizontal"
