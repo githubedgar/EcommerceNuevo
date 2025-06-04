@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿
+using System.IO;
 public class Vehiculo
 {
     public int Id { get; set; }
@@ -17,5 +18,12 @@ public class Vehiculo
 
     public string ImagenDerecha =>
         Path.Combine(AppContext.BaseDirectory, "Resources", "Images", "autos", $"{Marca.ToLower()}2.png");
+
+    public string ImagenMotoIzquierda =>
+    Path.Combine(AppContext.BaseDirectory, "Resources", "Images", "motostrad", $"{Marca.ToLower()}1.png");
+
+    public string ImagenMotoDerecha =>
+        Path.Combine(AppContext.BaseDirectory, "Resources", "Images", "motostrad", $"{Marca.ToLower()}2.png");
+
 
 }

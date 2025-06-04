@@ -5,9 +5,9 @@ using Microsoft.Maui.Controls;
 
 namespace EcommerceDelUsado.UI.Views;
 
-public partial class VehiculoPage : ContentPage
+public partial class MotoTradPage : ContentPage
 {
-    public VehiculoPage()
+    public MotoTradPage()
     {
         InitializeComponent();
 
@@ -15,6 +15,6 @@ public partial class VehiculoPage : ContentPage
 
         var repositorio = new VehiculoRepository(connectionString);
         var useCase = new ObtenerVehiculosUseCase(repositorio);
-        BindingContext = new VehiculoViewModel(useCase, "Auto"); // Filtra por tipo
+        BindingContext = new VehiculoViewModel(useCase, "MotoTradicional"); // Filtra por tipo
     }
 }

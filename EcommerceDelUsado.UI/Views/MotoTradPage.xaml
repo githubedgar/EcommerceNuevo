@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EcommerceDelUsado.UI.Views.VehiculoPage"
+             x:Class="EcommerceDelUsado.UI.Views.MotoTradPage"
              Title=""
              BackgroundColor="White">
 
     <ScrollView>
         <VerticalStackLayout Padding="10" Spacing="20">
-            <Label Text="Automoviles Disponibles"
+            <Label Text="Motos Disponibles"
                    FontSize="24"
                    FontAttributes="Bold"
                    HorizontalOptions="Center" />
@@ -37,7 +37,7 @@
                                              Orientation="Vertical"
                                              Margin="5"
                                              Grid.Row="1">
-                                    <HorizontalStackLayout Spacing="5"> <!--Separación horizontal entre Label y Binding-->
+                                    <HorizontalStackLayout Spacing="5"> <!-- Separación horizontal entre Label y Binding -->
                                         <Label Text="Marca:" FontAttributes="Bold" />
                                         <Label Text="{Binding Marca}" FontAttributes="Bold" FontSize="16" />
                                     </HorizontalStackLayout>

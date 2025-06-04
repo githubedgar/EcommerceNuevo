@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.Maui.Controls;
-using EcommerceDelUsado.UI.Views; // IMPORTACIÓN NECESARIA
+using EcommerceDelUsado.UI.Views; // IMPORTANTE para acceder a MotoTradPage
 
 namespace EcommerceDelUsado.UI
 {
@@ -10,16 +10,17 @@ namespace EcommerceDelUsado.UI
         {
             InitializeComponent();
         }
+
         private async void OnVerVehiculosClicked(object sender, EventArgs e)
         {
-           
-            await Shell.Current.GoToAsync("VehiculoPage");
+            // Navega a la página de vehículos (autos)
+            await Navigation.PushAsync(new VehiculoPage());
         }
+
         private async void OnVerMotoTradicionalClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MotosTradicionalesPage()); 
-
+            // Navega a la página de motos tradicionales
+            await Navigation.PushAsync(new MotoTradPage());
         }
-
     }
 }

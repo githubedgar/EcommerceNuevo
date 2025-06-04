@@ -25,7 +25,8 @@ namespace EcommerceDelUsado.Infrastructure.Repositories
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 await conn.OpenAsync();
-                var cmd = new SqlCommand("SELECT Id, Marca, Modelo, Año, Precio FROM Vehiculos", conn);
+                var cmd = new SqlCommand("SELECT Id, Marca, Modelo, Año, Precio, Tipo FROM Vehiculos", conn);
+
                 var reader = await cmd.ExecuteReaderAsync();
 
                 while (await reader.ReadAsync())
@@ -36,7 +37,8 @@ namespace EcommerceDelUsado.Infrastructure.Repositories
                         Marca = reader.GetString(1),
                         Modelo = reader.GetString(2),
                         Año = reader.GetInt32(3),
-                        Precio = reader.GetDecimal(4)
+                        Precio = reader.GetDecimal(4),
+                        Tipo = reader.GetString(5)
                     });
                 }
             }
