@@ -91,6 +91,48 @@
 		<MauiImage Update="Resources\Images\autos\volkswagen2.png">
 		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\damon1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\damon2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\energica1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\energica2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\niu1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\niu2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\ofero1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\ofero2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\silence1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\silence2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\super1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\super2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\zero1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\motoselec\zero2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
 		
 		<!--<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />-->
 		<MauiImage Update="Resources\Images\motostrad\ducati1.png">
@@ -145,7 +187,6 @@
 	  <Folder Include="Models\" />
 	  <Folder Include="Helpers\" />
 	  <Folder Include="Controls\" />
-	  <Folder Include="Resources\Images\motoselectricas\" />
 	  <Folder Include="Services\" />
 	</ItemGroup>
 
@@ -159,7 +200,7 @@
 	  <MauiXaml Update="Views\BicisTradicionalesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\MotosElectricasPage.xaml">
+	  <MauiXaml Update="Views\MotoElecPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\MotoTradPage.xaml">

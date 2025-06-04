@@ -22,5 +22,11 @@ namespace EcommerceDelUsado.UI
             // Navega a la página de motos tradicionales
             await Navigation.PushAsync(new MotoTradPage());
         }
+
+        private async void OnVerMotoElectricaClicked(object sender, EventArgs e)
+        {
+            // Navega a la página de motos eloectricas
+            await Navigation.PushAsync(new MotoElecPage());
+        }
     }
 }

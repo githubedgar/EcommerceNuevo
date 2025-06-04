@@ -52,7 +52,8 @@
                     CornerRadius="15"
                     Grid.Column="2"
                     HeightRequest="50"
-                    FontSize="11" />
+                    FontSize="11"
+                    Clicked="OnVerMotoElectricaClicked"/>
 
             <Button Text="Bici&#10;Trad"
                     BackgroundColor="#E0E0E0"
@@ -157,7 +158,8 @@
                     <ImageButton Source="motoelec.png"
                                  BackgroundColor="Transparent"
                                  HeightRequest="24"
-                                 WidthRequest="24" />
+                                 WidthRequest="24"
+                                 Clicked="OnVerMotoElectricaClicked"/>
                     <Label Text="M. Eléc" FontSize="10" TextColor="#1B1B1B" HorizontalTextAlignment="Center" />
                 </VerticalStackLayout>
 
