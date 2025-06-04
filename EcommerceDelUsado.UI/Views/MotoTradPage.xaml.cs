@@ -15,6 +15,6 @@ public partial class MotoTradPage : ContentPage
 
         var repositorio = new VehiculoRepository(connectionString);
         var useCase = new ObtenerVehiculosUseCase(repositorio);
-        BindingContext = new VehiculoViewModel(useCase, "MotoTradicional"); // Filtra por tipo
+        BindingContext = new VehiculoViewModel(useCase, "MotoTradicional"); // Filtra por tipo. MotoTradicional es el campo "Tipo" en la DB.
     }
 }

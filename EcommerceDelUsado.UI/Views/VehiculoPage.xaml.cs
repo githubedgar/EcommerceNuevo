@@ -15,6 +15,6 @@ public partial class VehiculoPage : ContentPage
 
         var repositorio = new VehiculoRepository(connectionString);
         var useCase = new ObtenerVehiculosUseCase(repositorio);
-        BindingContext = new VehiculoViewModel(useCase, "Auto"); // Filtra por tipo
+        BindingContext = new VehiculoViewModel(useCase, "Auto"); // Filtra por tipo. Auto es el campo "Tipo" en la DB.
     }
 }
