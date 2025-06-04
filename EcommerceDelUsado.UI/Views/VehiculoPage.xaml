@@ -7,7 +7,7 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="10" Spacing="20">
-            <Label Text="Automoviles Disponibles"
+            <Label Text="Motos Disponibles"
                    FontSize="24"
                    FontAttributes="Bold"
                    HorizontalOptions="Center" />
@@ -16,28 +16,23 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame CornerRadius="10" Padding="10" Margin="5" HasShadow="True" BackgroundColor="White">
-                            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto" RowSpacing="5">
+                            <!-- NUEVA DISTRIBUCIÓN EN 3 COLUMNAS -->
+                            <Grid ColumnDefinitions="Auto,*,Auto"
+                                  RowDefinitions="Auto"
+                                  ColumnSpacing="10"
+                                  VerticalOptions="Center">
 
-                                <!-- Imagen 1 -->
+                                <!-- Imagen Izquierda -->
                                 <Image Grid.Column="0"
                                        Source="{Binding Imagen1}"
                                        Aspect="AspectFit"
-                                       HeightRequest="100"
+                                       HeightRequest="200"
+                                       WidthRequest="200"
                                        Margin="5" />
 
-                                <!-- Imagen 2 -->
-                                <Image Grid.Column="1"
-                                       Source="{Binding Imagen2}"
-                                       Aspect="AspectFit"
-                                       HeightRequest="100"
-                                       Margin="5" />
-
-                                <!-- Detalles -->
-                                <StackLayout Grid.ColumnSpan="2"
-                                             Orientation="Vertical"
-                                             Margin="5"
-                                             Grid.Row="1">
-                                    <HorizontalStackLayout Spacing="5"> <!--Separación horizontal entre Label y Binding-->
+                                <!-- Características -->
+                                <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="0">
+                                    <HorizontalStackLayout Spacing="5">
                                         <Label Text="Marca:" FontAttributes="Bold" />
                                         <Label Text="{Binding Marca}" FontAttributes="Bold" FontSize="16" />
                                     </HorizontalStackLayout>
@@ -54,9 +49,17 @@
 
                                     <HorizontalStackLayout Spacing="5">
                                         <Label Text="Precio:" FontAttributes="Bold" />
-                                        <Label Text="{Binding Precio, StringFormat='{0:C}'}" FontSize="14" />
+                                        <Label Text="{Binding Precio, StringFormat='{0:C0}'}" FontSize="14" />
                                     </HorizontalStackLayout>
-                                </StackLayout>
+                                </VerticalStackLayout>
+
+                                <!-- Imagen Derecha -->
+                                <Image Grid.Column="2"
+                                       Source="{Binding Imagen2}"
+                                       Aspect="AspectFit"
+                                       HeightRequest="200"
+                                       WidthRequest="200"
+                                       Margin="5" />
                             </Grid>
                         </Frame>
                     </DataTemplate>
