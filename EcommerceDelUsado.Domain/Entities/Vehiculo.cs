@@ -13,17 +13,23 @@ public class Vehiculo
     public decimal Precio { get; set; }
     public string Descripcion { get; set; }
 
-    public string ImagenIzquierda =>
-        Path.Combine(AppContext.BaseDirectory, "Resources", "Images", "autos", $"{Marca.ToLower()}1.png");
+    //public string ImagenIzquierda =>
+    //    Path.Combine(AppContext.BaseDirectory, "Resources", "Images", "autos", $"{Marca.ToLower()}1.png");
 
-    public string ImagenDerecha =>
-        Path.Combine(AppContext.BaseDirectory, "Resources", "Images", "autos", $"{Marca.ToLower()}2.png");
+    //public string ImagenDerecha =>
+    //    Path.Combine(AppContext.BaseDirectory, "Resources", "Images", "autos", $"{Marca.ToLower()}2.png");
 
-    public string ImagenMotoIzquierda =>
-    Path.Combine(AppContext.BaseDirectory, "Resources", "Images", "motostrad", $"{Marca.ToLower()}1.png");
+    //public string ImagenMotoIzquierda =>
+    //Path.Combine(AppContext.BaseDirectory, "Resources", "Images", "motostrad", $"{Marca.ToLower()}1.png");
 
-    public string ImagenMotoDerecha =>
-        Path.Combine(AppContext.BaseDirectory, "Resources", "Images", "motostrad", $"{Marca.ToLower()}2.png");
+    //public string ImagenMotoDerecha =>
+    //    Path.Combine(AppContext.BaseDirectory, "Resources", "Images", "motostrad", $"{Marca.ToLower()}2.png");
+
+    public string Imagen1 => Marca.ToLower() + "1.png";
+    public string Imagen2 => Marca.ToLower() + "2.png";
+
+
+
 
 
 }
