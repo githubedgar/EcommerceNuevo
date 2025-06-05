@@ -2,13 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EcommerceDelUsado.UI.MainPage"
-             BackgroundColor="#F5F5F5"
+             BackgroundColor="White"
              NavigationPage.HasNavigationBar="False"
              Shell.NavBarIsVisible="False">
 
     <Grid RowDefinitions="Auto, Auto, *, Auto">
 
-        <!-- Barra azul con texto Inicio (reducida 15%) -->
+        <!-- Barra azul con texto Inicio -->
         <Grid BackgroundColor="#0078D7" Padding="23,15" Grid.Row="0">
             <Label Text="Inicio"
                    FontSize="28"
