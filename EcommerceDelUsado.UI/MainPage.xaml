@@ -61,7 +61,8 @@
                     CornerRadius="15"
                     Grid.Column="3"
                     HeightRequest="50"
-                    FontSize="11" />
+                    FontSize="11"
+                    Clicked="OnVerBiciTradicionalClicked"/>
 
             <Button Text="Bici&#10;Eléc"
                     BackgroundColor="#E0E0E0"
@@ -69,32 +70,14 @@
                     CornerRadius="15"
                     Grid.Column="4"
                     HeightRequest="50"
-                    FontSize="11" />
+                    FontSize="11"
+                    Clicked="OnVerBiciElectricaClicked" />
         </Grid>
 
         <!-- Imagen centrada con esquinas redondeadas usando Frame -->
         <Grid Grid.Row="2"
               HorizontalOptions="Center"
               VerticalOptions="Center">
-
-
-            <!--<Frame Padding="0"
-       CornerRadius="0"
-       HasShadow="False"
-       IsClippedToBounds="True"
-       HorizontalOptions="Center"
-       VerticalOptions="Center"
-       BackgroundColor="Transparent"
-       BorderColor="Transparent">
-
-                <Image Source="imagenecommercedelusado.png"
-           Aspect="AspectFit"
-           WidthRequest="200"
-           HeightRequest="200"
-           HorizontalOptions="Center"
-           VerticalOptions="Center" />
-            </Frame>-->
-
 
             <Frame Padding="0"
        CornerRadius="30"
@@ -114,10 +97,6 @@
            HorizontalOptions="Center"
            VerticalOptions="Center" />
             </Frame>
-
-
-
-
 
         </Grid>
         <!-- Botones inferiores con scroll horizontal -->
@@ -162,22 +141,23 @@
                                  Clicked="OnVerMotoElectricaClicked"/>
                     <Label Text="M. Eléc" FontSize="10" TextColor="#1B1B1B" HorizontalTextAlignment="Center" />
                 </VerticalStackLayout>
+                
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <ImageButton Source="bicitrad.png"
+                                 BackgroundColor="Transparent"
+                                 HeightRequest="24"
+                                 WidthRequest="24"
+                                 Clicked="OnVerBiciTradicionalClicked"  />
+                    <Label Text="B. Trad" FontSize="10" TextColor="#1B1B1B" HorizontalTextAlignment="Center" />
+                </VerticalStackLayout>
 
                 <VerticalStackLayout HorizontalOptions="Center">
                     <ImageButton Source="bicielec.png"
                                  BackgroundColor="Transparent"
                                  HeightRequest="24"
-                                 WidthRequest="24" />
+                                 WidthRequest="24"
+                                 Clicked="OnVerBiciElectricaClicked"/>
                     <Label Text="B. Eléc" FontSize="10" TextColor="#1B1B1B" HorizontalTextAlignment="Center" />
-                </VerticalStackLayout>
-
-                <!-- NUEVO BOTÓN: B. Trad -->
-                <VerticalStackLayout HorizontalOptions="Center">
-                    <ImageButton Source="bicitrad.png"
-                                 BackgroundColor="Transparent"
-                                 HeightRequest="24"
-                                 WidthRequest="24" />
-                    <Label Text="B. Trad" FontSize="10" TextColor="#1B1B1B" HorizontalTextAlignment="Center" />
                 </VerticalStackLayout>
 
             </HorizontalStackLayout>

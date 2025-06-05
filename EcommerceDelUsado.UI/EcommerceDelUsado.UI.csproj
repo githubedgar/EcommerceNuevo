@@ -91,6 +91,108 @@
 		<MauiImage Update="Resources\Images\autos\volkswagen2.png">
 		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</MauiImage>
+		<MauiImage Update="Resources\Images\bicielec\biobici1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicielec\biobici2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicielec\canaan1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicielec\canaan2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicielec\electrobike1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicielec\electrobike2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicielec\evobike1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicielec\evobike2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicielec\roadmaster1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicielec\roadmaster2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicielec\starker1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicielec\starker2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\bianchi1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\bianchi2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\cannondale1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\cannondale2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\giant1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\giant2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\gw1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\gw2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\monark1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\monark2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\raleigh1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\raleigh2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\schwinn1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\schwinn2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\scott1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\scott2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\specialized1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\specialized2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\totguard1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\totguard2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\trek1.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\bicitrad\trek2.png">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</MauiImage>
 		<MauiImage Update="Resources\Images\motoselec\damon1.png">
 		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</MauiImage>
@@ -194,10 +296,10 @@
 	  <MauiXaml Update="MainPage.xaml">
 	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\BicisElectricasPage.xaml">
+	  <MauiXaml Update="Views\BiciElecPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\BicisTradicionalesPage.xaml">
+	  <MauiXaml Update="Views\BiciTradPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\MotoElecPage.xaml">

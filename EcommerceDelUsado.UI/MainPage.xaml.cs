@@ -25,8 +25,20 @@ namespace EcommerceDelUsado.UI
 
         private async void OnVerMotoElectricaClicked(object sender, EventArgs e)
         {
-            // Navega a la página de motos eloectricas
+            // Navega a la página de motos electricas
             await Navigation.PushAsync(new MotoElecPage());
+        }
+
+        private async void OnVerBiciElectricaClicked(object sender, EventArgs e)
+        {
+            // Navega a la página de bicicletas electricas
+            await Navigation.PushAsync(new BiciElecPage());
+        }
+
+        private async void OnVerBiciTradicionalClicked(object sender, EventArgs e)
+        {
+            // Navega a la página de bicicletas electricas
+            await Navigation.PushAsync(new BiciTradPage());
         }
     }
 }

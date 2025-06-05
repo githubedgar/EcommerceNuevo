@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcommerceDelUsado.UI.Views.BiciElecPage"
+             Title=""
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="20">
+            <Label Text="Bici. Eléctricas Disponibles"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <CollectionView ItemsSource="{Binding Vehiculos}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame CornerRadius="10" Padding="10" Margin="5" HasShadow="True" BackgroundColor="White">
+                            <!-- NUEVA DISTRIBUCIÓN EN 3 COLUMNAS -->
+                            <Grid ColumnDefinitions="Auto,*,Auto"
+                                  RowDefinitions="Auto"
+                                  ColumnSpacing="10"
+                                  VerticalOptions="Center">
+
+                                <!-- Imagen Izquierda -->
+                                <Image Grid.Column="0"
+                                       Source="{Binding Imagen1}"
+                                       Aspect="AspectFit"
+                                       HeightRequest="150"
+                                       WidthRequest="150"
+                                       Margin="5" />
+
+                                <!-- Características -->
+                                <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="0">
+                                    <HorizontalStackLayout Spacing="5">
+                                        <Label Text="Marca:" FontAttributes="Bold" />
+                                        <Label Text="{Binding Marca}" FontAttributes="Bold" FontSize="16" />
+                                    </HorizontalStackLayout>
+
+                                    <HorizontalStackLayout Spacing="5">
+                                        <Label Text="Modelo:" FontAttributes="Bold" />
+                                        <Label Text="{Binding Modelo}" FontSize="14" />
+                                    </HorizontalStackLayout>
+
+                                    <HorizontalStackLayout Spacing="5">
+                                        <Label Text="Año:" FontAttributes="Bold" />
+                                        <Label Text="{Binding Año}" FontSize="14" />
+                                    </HorizontalStackLayout>
+
+                                    <HorizontalStackLayout Spacing="5">
+                                        <Label Text="Precio:" FontAttributes="Bold" />
+                                        <Label Text="{Binding Precio, StringFormat='{0:C0}'}" FontSize="14" />
+                                    </HorizontalStackLayout>
+                                </VerticalStackLayout>
+
+                                <!-- Imagen Derecha -->
+                                <Image Grid.Column="2"
+                                       Source="{Binding Imagen2}"
+                                       Aspect="AspectFit"
+                                       HeightRequest="150"
+                                       WidthRequest="150"
+                                       Margin="5" />
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
