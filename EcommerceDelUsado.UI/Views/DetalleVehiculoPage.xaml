@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcommerceDelUsado.UI.Views.DetalleVehiculoPage"
+             Title="Detalle del Vehículo"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="{Binding Marca}" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+            <Label Text="{Binding Modelo}" FontSize="20" HorizontalOptions="Center" />
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                <Image Grid.Column="0"
+                       Source="{Binding Imagen1}"
+                       Aspect="AspectFit"
+                       HeightRequest="200" />
+
+                <Image Grid.Column="1"
+                       Source="{Binding Imagen2}"
+                       Aspect="AspectFit"
+                       HeightRequest="200" />
+            </Grid>
+
+            <Label Text="Año:" FontAttributes="Bold" />
+            <Label Text="{Binding Año}" />
+
+            <Label Text="Color:" FontAttributes="Bold" />
+            <Label Text="{Binding Color}" />
+
+            <Label Text="Kilometraje:" FontAttributes="Bold" />
+            <Label Text="{Binding Kilometraje}" />
+
+            <Label Text="Transmisión:" FontAttributes="Bold" />
+            <Label Text="{Binding Transmision}" />
+
+            <Label Text="Precio:" FontAttributes="Bold" />
+            <Label Text="{Binding Precio, StringFormat='{0:C0}'}" />
+
+            <Label Text="Descripción:" FontAttributes="Bold" />
+            <Label Text="{Binding Descripcion}" LineBreakMode="WordWrap" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -18,4 +18,10 @@
         ContentTemplate="{DataTemplate views:VehiculoPage}"
         IsVisible="False" />
 
+    <!-- Ruta oculta a DetalleVehiculoPage para navegación -->
+    <ShellContent 
+        Route="detallevehiculo"
+        ContentTemplate="{DataTemplate views:DetalleVehiculoPage}" 
+        IsVisible="False" />
+
 </Shell>
