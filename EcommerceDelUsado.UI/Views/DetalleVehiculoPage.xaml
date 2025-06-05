@@ -5,7 +5,7 @@
              Title="Detalle del Vehículo Escogido"
              BackgroundColor="White">
 
-    <ScrollView>
+    <!--<ScrollView>-->
         <VerticalStackLayout Padding="20" Spacing="20">
 
             <!-- FRAME PRINCIPAL -->
@@ -35,50 +35,95 @@
 
                     <!-- IMAGEN DEL VEHÍCULO -->
                     <Image Source="{Binding Imagen2}"
-                           Aspect="AspectFit"
-                           HeightRequest="240"
+                           Aspect="AspectFill"
+                           HeightRequest="200"
                            HorizontalOptions="Center"
                            VerticalOptions="Center" />
 
-                    <!-- CARACTERÍSTICAS DEL VEHICULO -->
-                    <StackLayout HorizontalOptions="Center">
-                        <Grid RowSpacing="8"
-                            ColumnDefinitions="100,*"
-                            RowDefinitions="Auto,Auto,Auto,Auto,Auto">
+                    <!-- CARACTERÍSTICAS DEL VEHÍCULO CENTRADAS HORIZONTALMENTE -->
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                    <Grid RowSpacing="8"
+                        ColumnSpacing="10"
+                        Margin="0,-30,0,0"     
+                        ColumnDefinitions="Auto,Auto"
+                        RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
 
-                            <Label Text="Año:" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" />
-                            <Label Text="{Binding Año}" Grid.Row="0" Grid.Column="1" Margin="2,0,0,0" />
+                        <Label Text="Año:" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="End"/>
+                        <Label Text="{Binding Año}" Grid.Row="0" Grid.Column="1" />
 
-                            <Label Text="Color:" FontAttributes="Bold" Grid.Row="1" Grid.Column="0" />
-                            <Label Text="{Binding Color}" Grid.Row="1" Grid.Column="1" Margin="2,0,0,0" />
+                        <Label Text="Color:" FontAttributes="Bold" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="End"/>
+                        <Label Text="{Binding Color}" Grid.Row="1" Grid.Column="1" />
 
-                            <Label Text="Kilometraje:" FontAttributes="Bold" Grid.Row="2" Grid.Column="0" />
-                            <Label Text="{Binding Kilometraje, StringFormat='{0:N0} km'}" Grid.Row="2" Grid.Column="1" Margin="2,0,0,0" />
+                        <Label Text="Kilometraje:" FontAttributes="Bold" Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="End"/>
+                        <Label Text="{Binding Kilometraje, StringFormat='{0:N0} km'}" Grid.Row="2" Grid.Column="1" />
 
+                        <Label Text="Transmisión:" FontAttributes="Bold" Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="End"/>
+                        <Label Text="{Binding Transmision}" Grid.Row="3" Grid.Column="1" />
 
-                            <Label Text="Transmisión:" FontAttributes="Bold" Grid.Row="3" Grid.Column="0" />
-                            <Label Text="{Binding Transmision}" Grid.Row="3" Grid.Column="1" Margin="2,0,0,0" />
+                        <Label Text="Precio:" FontAttributes="Bold" Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="End"/>
+                        <Label Text="{Binding Precio, StringFormat='${0:N0}'}" Grid.Row="4" Grid.Column="1" />
 
-                            <Label Text="Precio:" FontAttributes="Bold" Grid.Row="4" Grid.Column="0" />
-                            <Label Text="{Binding Precio, StringFormat='{0:C0}'}" Grid.Row="4" Grid.Column="1" Margin="2,0,0,0" />
                         </Grid>
-                    </StackLayout>
-
-
-
+                </HorizontalStackLayout>
 
                     <!-- DESCRIPCIÓN -->
                     <Label Text="Descripción:"
                            FontAttributes="Bold"
-                           Margin="0,10,0,0"
+                           Margin="0,3,0,0"
                            HorizontalOptions="Center" />
 
                     <Label Text="{Binding Descripcion}"
                            LineBreakMode="WordWrap"
                            FontSize="14"
+                           Margin="0,-15,0,0"
                            HorizontalOptions="Center" />
-                </VerticalStackLayout>
+
+                    <!-- BOTONES DE ACCIÓN -->
+                    <!--<HorizontalStackLayout Spacing="20"
+                                           Margin="0,5,0,0"
+                                           HorizontalOptions="Center">
+
+                        <Button Text="Pagar"
+                                BackgroundColor="#2E8B57"
+                                TextColor="White"
+                                Padding="14,10"
+                                CornerRadius="10"
+                                Clicked="OnPagarClicked" />
+
+                    <ImageButton Source="whatsapp_icon.png"
+                                     HeightRequest="40"
+                                     WidthRequest="80"
+                                     BackgroundColor="Transparent"
+                                     Clicked="OnWhatsAppClicked" />
+                    </HorizontalStackLayout>-->
+
+                <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+
+                    <!-- Botón Pagar -->
+                    <Button Text="Pagar"
+                                BackgroundColor="#2E8B57"
+                                TextColor="White"
+                                Padding="14,10"
+                                CornerRadius="10"
+                                WidthRequest="120"
+                                HeightRequest="50"
+                                Clicked="OnPagarClicked" />
+
+                    <!-- Botón WhatsApp solo ícono, mismo tamaño -->
+                    <ImageButton Source="whatsapp_icon.png"
+                                 BackgroundColor="#25D366"
+                                 CornerRadius="10"
+                                 WidthRequest="120"
+                                 HeightRequest="50"
+                                 Padding="0"
+                                 Aspect="AspectFit"
+                                 Clicked="OnWhatsAppClicked" />
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
             </Frame>
         </VerticalStackLayout>
-    </ScrollView>
+    <!--</ScrollView>-->
 </ContentPage>

@@ -27,8 +27,8 @@
                                 <!-- Imagen Izquierda -->
                                 <Image Grid.Column="0"
                                        Source="{Binding Imagen1}"
-                                       Aspect="AspectFit"
-                                       HeightRequest="200"
+                                       Aspect="AspectFill"
+                                       HeightRequest="150"
                                        WidthRequest="200"
                                        Margin="5" />
 
