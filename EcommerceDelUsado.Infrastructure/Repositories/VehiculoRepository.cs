@@ -25,7 +25,8 @@ namespace EcommerceDelUsado.Infrastructure.Repositories
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 await conn.OpenAsync();
-                var cmd = new SqlCommand("SELECT Id, Marca, Modelo, Año, Precio, Tipo FROM Vehiculos", conn);
+                var cmd = new SqlCommand(@"SELECT Id, Marca, Modelo, Año, Precio, Tipo, Color, Kilometraje, Transmision, Descripcion 
+                           FROM Vehiculos", conn);
 
                 var reader = await cmd.ExecuteReaderAsync();
 
@@ -38,8 +39,14 @@ namespace EcommerceDelUsado.Infrastructure.Repositories
                         Modelo = reader.GetString(2),
                         Año = reader.GetInt32(3),
                         Precio = reader.GetDecimal(4),
-                        Tipo = reader.GetString(5)
+                        Tipo = reader.GetString(5),
+                        Color = reader.IsDBNull(6) ? "" : reader.GetString(6),  // Usamos reader.IsDBNull(x) ? ... para evitar errores si el campo en la base de datos está NULL.
+                        Kilometraje = reader.IsDBNull(7) ? 0 : reader.GetInt32(7), // También asignamos un valor por defecto ("" o 0) si el dato no existe.
+                        Transmision = reader.IsDBNull(8) ? "" : reader.GetString(8),
+                        Descripcion = reader.IsDBNull(9) ? "" : reader.GetString(9)
                     });
+
+
                 }
             }
 
