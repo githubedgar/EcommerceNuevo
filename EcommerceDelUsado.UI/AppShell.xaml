@@ -24,9 +24,15 @@
         ContentTemplate="{DataTemplate views:DetalleVehiculoPage}" 
         IsVisible="False" />
     
-    <!-- Ruta oculta a DetalleMotoPage para navegación -->
+    <!-- Ruta oculta a DetalleMotoTradPage para navegación -->
     <ShellContent 
-        Route="detalleMoto"
+        Route="detalleMotoTrad"
         ContentTemplate="{DataTemplate views:DetalleMotoTradPage}" 
+        IsVisible="False" />
+    
+    <!-- Ruta oculta a DetalleMotoElecPage para navegación -->
+    <ShellContent 
+        Route="detalleMotoElec"
+        ContentTemplate="{DataTemplate views:DetalleMotoElecPage}" 
         IsVisible="False" />
 </Shell>

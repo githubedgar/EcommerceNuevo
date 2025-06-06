@@ -12,7 +12,9 @@
                    FontAttributes="Bold"
                    HorizontalOptions="Center" />
 
-            <CollectionView ItemsSource="{Binding Vehiculos}">
+            <CollectionView ItemsSource="{Binding Vehiculos}"
+                            SelectionMode="Single"
+                            SelectionChanged="OnMotoElecSelected">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame CornerRadius="10" Padding="10" Margin="5" HasShadow="True" BackgroundColor="White">
@@ -25,9 +27,9 @@
                                 <!-- Imagen Izquierda -->
                                 <Image Grid.Column="0"
                                        Source="{Binding Imagen1}"
-                                       Aspect="AspectFit"
+                                       Aspect="AspectFill"
                                        HeightRequest="150"
-                                       WidthRequest="150"
+                                       WidthRequest="200"
                                        Margin="5" />
 
                                 <!-- Características -->
@@ -57,8 +59,8 @@
                                 <Image Grid.Column="2"
                                        Source="{Binding Imagen2}"
                                        Aspect="AspectFit"
-                                       HeightRequest="150"
-                                       WidthRequest="150"
+                                       HeightRequest="200"
+                                       WidthRequest="200"
                                        Margin="5" />
                             </Grid>
                         </Frame>

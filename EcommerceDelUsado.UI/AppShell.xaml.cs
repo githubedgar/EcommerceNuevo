@@ -11,6 +11,7 @@ namespace EcommerceDelUsado.UI // ESTE NAMESPACE DEBE COINCIDIR CON x:Class EN E
             Routing.RegisterRoute(nameof(VehiculoPage), typeof(VehiculoPage));
             Routing.RegisterRoute(nameof(DetalleVehiculoPage), typeof(DetalleVehiculoPage));
             Routing.RegisterRoute(nameof(DetalleMotoTradPage), typeof(DetalleMotoTradPage));
+            Routing.RegisterRoute(nameof(DetalleMotoElecPage), typeof(DetalleMotoElecPage));
         }
     }
 }
