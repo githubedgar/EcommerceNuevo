@@ -35,4 +35,10 @@
         Route="detalleMotoElec"
         ContentTemplate="{DataTemplate views:DetalleMotoElecPage}" 
         IsVisible="False" />
+    
+    <!-- Ruta oculta a DetalleBiciTradPage para navegación -->
+    <ShellContent 
+        Route="detalleBiciTrad"
+        ContentTemplate="{DataTemplate views:DetalleBiciTradPage}" 
+        IsVisible="False" />
 </Shell>

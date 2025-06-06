@@ -7,7 +7,7 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="10" Spacing="20">
-            <Label Text="Motos Disponibles"
+            <Label Text="Autos Disponibles"
                    FontSize="24"
                    FontAttributes="Bold"
                    HorizontalOptions="Center" />
