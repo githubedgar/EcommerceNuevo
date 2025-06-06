@@ -1,6 +1,6 @@
 ﻿using EcommerceDelUsado.UI.Views;
 
-namespace EcommerceDelUsado.UI // ESTE NAMESPACE DEBE COINCIDIR CON x:Class EN EL XAML
+namespace EcommerceDelUsado.UI
 {
     public partial class AppShell : Shell
     {
@@ -13,6 +13,7 @@ namespace EcommerceDelUsado.UI // ESTE NAMESPACE DEBE COINCIDIR CON x:Class EN E
             Routing.RegisterRoute(nameof(DetalleMotoTradPage), typeof(DetalleMotoTradPage));
             Routing.RegisterRoute(nameof(DetalleMotoElecPage), typeof(DetalleMotoElecPage));
             Routing.RegisterRoute(nameof(DetalleBiciTradPage), typeof(DetalleBiciTradPage));
+            Routing.RegisterRoute(nameof(DetalleBiciElecPage), typeof(DetalleBiciElecPage));
         }
     }
 }
