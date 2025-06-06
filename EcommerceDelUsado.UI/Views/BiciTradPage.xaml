@@ -51,7 +51,7 @@
 
                                     <HorizontalStackLayout Spacing="5">
                                         <Label Text="Precio:" FontAttributes="Bold" />
-                                        <Label Text="{Binding Precio, StringFormat='{0:C0}'}" FontSize="14" />
+                                        <Label Text="{Binding Precio, StringFormat='${0:N0}'}" Grid.Row="4" Grid.Column="1" />
                                     </HorizontalStackLayout>
                                 </VerticalStackLayout>
 
