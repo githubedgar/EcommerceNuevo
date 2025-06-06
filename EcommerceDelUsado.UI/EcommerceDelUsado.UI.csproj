@@ -302,6 +302,9 @@
 	  <MauiXaml Update="Views\BiciTradPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\DetalleMotoTradPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\DetalleVehiculoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

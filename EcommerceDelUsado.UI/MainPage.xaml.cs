@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.Maui.Controls;
-using EcommerceDelUsado.UI.Views; // IMPORTANTE para acceder a MotoTradPage
+using EcommerceDelUsado.UI.Views; // IMPORTANTE para acceder a *Page
 
 namespace EcommerceDelUsado.UI
 {
